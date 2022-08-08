@@ -9,35 +9,73 @@
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital@1&family=Parisienne&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/68dc237817.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
-
         <div class="logo">
             <img src="img/star.svg" alt="Imagen Logo">
         </div>
-        
         <div class="titulo">
-           <li>Corina Accesorios</li>
+            <h1>CorinaAccesorios</h1>
         </div>
         <div class="hamburguesa">
-            <li>&equiv;</li>
+            <button>&equiv;</button>
+            <!--El &equiv es codigo ascii-->
         </div>
     </header>
-
     <main>
         <div class="imagen-principal">
-            <img src="img//PULSERA.jpeg" alt="">
+            <p class="bienvenidos">Bienvenidos!</p>
+            <img src="img/PULSERA.jpeg" alt="imagen pulsera">
         </div>
         <div class="nosotros">
-            <h1>Nosotros</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab harum ullam quidem, aspernatur eos aperiam architecto odit debitis laboriosam dicta.</p>
+            <h2>Nosotros</h2>
+            <p class="parrafo"> Somos una empresa dedicada a la venta de Accesorios para la belleza femenina. Nuestra
+                empresa nació en 2020 en el marco de la pandemia y crece día a día gracias a nuestros clientes que
+                confian en nuestros trabajos. Actualmente nos encontramos en la ciudad de Rosario, Santa Fe.</p>
         </div>
+        <section>
+            <!-- Seccion Productos-->
+            <h2>Nuestros Productos</h2>
+            <div class="productos">
+                <div>
+                    <p class="producto__parrafo">Anillos</p>
+                    <a href="/galeria.html"><img src="img/anillo.jpeg" alt="Imagen Anillo"></a>
+                </div>
+                <div>
+                    <p class="producto__parrafo">Collares</p>
+                    <a href="/galeria.html"><img src="img/collaar.jpeg" alt="Imagen Collar"></a>
+                </div>
+                <div>
+                    <p class="producto__parrafo">Pulseras</p>
+                    <a href="/galeria.html"><img src="img/pulsera1.png" alt="Imagen Pulsera"></a>
+                </div>
+            </div>
+        </section> <!-- Fin Seccion Productos-->
+        <section>
+            <h2>Contáctanos</h2>
+            <div class="contenedor-redes">
+                <div class="redes">
+                    <p class="redes__parrafo">Whatsapp</p>
+                    <a href="https://api.whatsapp.com/send?phone=3417123272"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="redes">
+                    <p class="redes__parrafo">Facebook</p>
+                    <a href="https://www.facebook.com/AfiladosEnRosario"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="redes">
+                    <p class="redes__parrafo">Instagram</p>
+                    <a href="https://www.instagram.com/scrunchies_rosario97/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p><strong>All Rights Reserved  &copy;Ailen Gareca 2022</strong> </p>
-    </footer> 
-                       
+        <p><strong>All Rights Reserved &copy;Ailen Gareca 2022</strong> </p>
+    </footer>
 </body>
 </html>

@@ -1,16 +1,20 @@
 :root {
-    --rosa:  #D68EDC;
-   --fuenteTitulo: 'Tangerine', cursive;
-   --fuenteTituloAlternativa: 'Inter', sans-serif;
+   --fuenteTitulo: 'Parisienne', cursive;
+   --fuente: 'Montserrat', sans-serif;
 }
 body {
     margin: 0;
-    background-color: var(--rosa);
+    background: #2193b0;
+    background: -webkit-linear-gradient(to left, #6dd5ed, #2193b0); 
+    background: linear-gradient(to left, #6dd5ed, #2193b0); 
     max-height: 100%;
+}
+img {
+    max-width: 100%;
 }
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1 rem = 10px */   
+    font-size: 62.5%; 
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -23,6 +27,22 @@ html {
     padding: 1rem;
     background-color: white;
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.50);
+}
+.bienvenidos {
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.40);
+    border-radius: 1rem;
+    font-size: 3rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .header img {
     width: 5rem;
@@ -40,7 +60,7 @@ html {
     font-size: 4rem;
     font-weight: 600;
 }
-.hamburguesa li {
+.hamburguesa button {
     list-style: none;
     font-size: 4rem;
 }
@@ -55,14 +75,87 @@ html {
 }
 .imagen-principal img {
     border-radius: 2rem;
+    min-width: 40rem;
+    min-height: 33rem;
 }
 
-
+/* Nosotros */
+.parrafo {
+    font-size: 2rem;
+    font-family: var(--fuente);
+}
 .nosotros {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
     width: 100%;
     height: 30rem;
+    padding: 2rem;
 }
+
+
+/* Nuestros Productos */
+
+.productos div img {
+    width: 40rem;
+    height: 35rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: all 300ms;
+}
+.productos div img:hover {
+    cursor: pointer;
+}
+.productos div {
+    margin: 0;
+}
+.productos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+.producto__parrafo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--fuente);
+}
+
+/* Seccion Contactanos  */
+
+.contenedor-redes {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10rem;
+}
+
+.redes img:hover{
+    cursor: pointer;
+}
+.redes {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes p {
+    font-size: 1.8rem;
+    font-family: var(--fuente);
+}
+.redes a {
+   font-size: 5rem;
+   color: rgb(28, 26, 26);
+}
+
 footer {
     text-align: center;
     font-size: 1.5rem;
@@ -74,3 +167,13 @@ footer {
     justify-content: center;
 }
 
+.volver a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+.volver {
+    margin-top: 10rem;
+    width: 10rem;
+    margin-left: 2rem;
+}
